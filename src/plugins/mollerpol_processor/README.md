@@ -124,7 +124,7 @@ ModuleParser_FADC::parse()
 ModuleParser_HelicityDecoder::parse()
   → event.Insert(helicity)         →→→  m_heldec_data_in()          → m_tree
 ModuleParser_HelicityScaler::parse()
-  → EventHits_FADC::insertIntoEvent()
+  → EventHits_HelicityScaler::insertIntoEvent()
       → event.Insert(scaler)       →→→  m_helicity_scaler_hits.in() → m_helicity_scaler_tree	
 
 ...
